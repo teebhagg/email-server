@@ -27,7 +27,7 @@ export const sendEmail = async (req: Request, res: Response) => {
     sendSmtpEmail.subject = body.subject ?? "Contact from Portfolio";
     sendSmtpEmail.htmlContent = `<html><body><p>${body.message}</p></body></html>`;
     sendSmtpEmail.sender = { name: body.fullName, email: body.email };
-    sendSmtpEmail.to = [{ email: "khalijones777@gmail.com", name: "Joshua Ansah" }]; 
+    sendSmtpEmail.to = [{ email: "khalijonez777@gmail.com", name: "Joshua Ansah" }]; 
 
   try {
     const data = await apiInstance.sendTransacEmail(sendSmtpEmail);
